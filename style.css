@@ -1,0 +1,180 @@
+/* =========================================
+   TASK MANAGER - COMPLETE STYLING
+   ========================================= */
+
+
+/* Basic page setup */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+
+/* Main heading */
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+p {
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+
+/* Task input */
+
+#taskInput {
+    width: 65%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+#taskInput:focus {
+    border-color: #333;
+}
+
+
+/* Priority dropdown */
+
+#taskPriority {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-left: 5px;
+    background-color: white;
+}
+
+
+/* Add Task button */
+
+#addTaskButton {
+    margin-top: 12px;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+}
+
+#addTaskButton:hover {
+    background-color: #555;
+}
+
+
+/* Task list */
+
+#taskList {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+
+/* Individual task */
+
+#taskList li {
+    background-color: white;
+    margin-bottom: 12px;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+/* Task name */
+
+#taskList li span {
+    flex: 1;
+    font-size: 16px;
+}
+
+
+/* Task buttons */
+
+#taskList button {
+    padding: 7px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+/* Mobile responsive design */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin-top: 20px;
+    }
+
+    p {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    #taskInput {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #taskPriority {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    #addTaskButton {
+        width: 100%;
+    }
+
+    #taskList {
+        margin-top: 25px;
+    }
+
+    #taskList li {
+        flex-wrap: wrap;
+        padding: 12px;
+    }
+
+    #taskList li span {
+        width: 100%;
+        flex-basis: 100%;
+        margin-bottom: 5px;
+    }
+
+    #taskList button {
+        margin-left: 0;
+    }
+}
